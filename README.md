@@ -3,7 +3,6 @@
 # MICRO-CONTROLEURS ET OPEN-SOURCE HARDWARE:
 # Projet de Construction d'un capteur de gaz 
 >LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail 
-Contact : 
 
 
 Ce projet, faisant partie du Master 5ISS de l'INSA Toulouse, a été developpé dans le but de créer un capteur de gas intelligent capable de détecter plusieurs types de gas qui pourront être dangereux pour la santé humaine.
@@ -20,5 +19,9 @@ Le projet est constitué des répertoires suivants:
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
+![Schéma électronique](/Projet_Kicad/Eeschema_shield.png)
+![Schéma électronique](/Projet_Kicad/PCB_shield_capteur.png)
+![Schéma électronique](/Projet_Kicad/Shield_avant_3D.png)
+![Schéma électronique](/Projet_Kicad/Shield_arriere_3D.png)
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
