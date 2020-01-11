@@ -33,3 +33,5 @@ Pour finir, nous avons réalisé un plan de masse:
 ![Schéma Shield Arrière 3D](/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
+
+[Rapport_LTSPice](/images_Mosh/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf)
