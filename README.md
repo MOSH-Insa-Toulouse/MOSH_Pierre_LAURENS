@@ -17,11 +17,19 @@ Le projet est constitué des répertoires suivants:
   
 ### Partie collection de données et communication LoRA: 
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
+![Schéma PCB](/images_Mosh/image_mosh_final.jpg)
+![Schéma PCB](/images_Mosh/result_pot_dernierevaleur.png)
+![Schéma PCB](/images_Mosh/Resultat_potentiometre.png)
+![Schéma PCB](/images_Mosh/valeur_internetthings.png)
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
 ![Schéma électronique](/Projet_Kicad/Eeschema_shield.png)
-![Schéma électronique](/Projet_Kicad/PCB_shield_capteur.png)
-![Schéma électronique](/Projet_Kicad/Shield_avant_3D.png)
-![Schéma électronique](/Projet_Kicad/Shield_arriere_3D.png)
+![Schéma PCB](/Projet_Kicad/PCB_shield_capteur.png)
+![Schéma Shield Avant 3D](/Projet_Kicad/Shield_avant_3D.png)
+![Schéma Shield Arrière 3D](/Projet_Kicad/Shield_arriere_3D.png)
+Pour finir, nous avons réalisé un plan de masse:
+![Schéma PCB](/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
+![Schéma Shield Avant 3D](/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
+![Schéma Shield Arrière 3D](/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
