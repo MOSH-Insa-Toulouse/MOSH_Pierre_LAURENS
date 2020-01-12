@@ -29,8 +29,12 @@ Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD 
 ![Schéma Shield Arrière 3D](/Projet_Kicad/Shield_arriere_3D.png)
 Pour finir, nous avons réalisé un plan de masse:
 ![Schéma PCB](/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
+![Schéma PCB avec Plan de masse en 3D](/Projet_Kicad_plan_masse/shiel_final.png)
 ![Schéma Shield Avant 3D](/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
 ![Schéma Shield Arrière 3D](/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
+
+Nous avons réalisé un plan de masse pour réduire la consommation en cuivre et limiter le routage en une seule couche. En effet, nous avons  supprimé toutes les routes sur la couche avant de notre shield(rouge) présentent sur la photo ci-dessus.
+Le plan de masse permet également de réaliser le routage sur une seule couche, la couche arrière  de notre Shield. Pour finir, nous avons ainsi respecté les contraintes de routage définies par l'INSA.
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
 
