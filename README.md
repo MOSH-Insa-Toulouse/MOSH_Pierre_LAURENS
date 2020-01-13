@@ -23,15 +23,15 @@ Dans cette partie, nous avons testé la collection de données et communication 
 ![Schéma PCB](/images_Mosh/valeur_internetthings.png)
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
-![Schéma électronique](/Projet_Kicad/Eeschema_shield.png)
-![Schéma PCB](/Projet_Kicad/PCB_shield_capteur.png)
-![Schéma Shield Avant 3D](/Projet_Kicad/Shield_avant_3D.png)
-![Schéma Shield Arrière 3D](/Projet_Kicad/Shield_arriere_3D.png)
+![Schéma électronique](/Kicad/Projet_Kicad/Eeschema_shield.png)
+![Schéma PCB](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad/Shield_avant_3D.png)
+![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
 Pour finir, nous avons réalisé un plan de masse:
-![Schéma PCB](/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
-![Schéma PCB avec Plan de masse en 3D](/Projet_Kicad_plan_masse/shiel_final.png)
-![Schéma Shield Avant 3D](/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
-![Schéma Shield Arrière 3D](/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
+![Schéma PCB](/Kicad/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
+![Schéma PCB avec Plan de masse en 3D](/Kicad/Projet_Kicad_plan_masse/shiel_final.png)
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
+![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
 
 Nous avons réalisé un plan de masse pour réduire la consommation en cuivre et limiter le routage en une seule couche. En effet, nous avons  supprimé toutes les routes sur la couche avant de notre shield(rouge) présentent sur la photo ci-dessus.
 Le plan de masse permet également de réaliser le routage sur une seule couche, la couche arrière  de notre Shield. Pour finir, nous avons ainsi respecté les contraintes de routage définies par l'INSA.
