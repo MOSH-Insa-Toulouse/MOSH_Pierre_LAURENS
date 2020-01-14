@@ -11,16 +11,18 @@ Après avoir construit le capteur dans l'atelier AIME de l'INSA, il sera donc n�
 # Contenu du Projet
 Le projet est constitué des répertoires suivants:
 -   **KiCAD**: Contient les fichiers nécessaires à la réalisation du PCB.
--   **Arduino IDE**: Contient les fichiers des tps effectués en utilisant l'IDE d'Arduino ainsi que les fichiers du projet.
+-   **Mosh (Arduino IDE)**: Contient les fichiers des tps effectués en utilisant l'IDE d'Arduino ainsi que les fichiers du projet.
 -   **LTSpice**: Contient les fichiers nécessaires à la partie éléctronique analogique.
 
   
 ### Partie collection de données et communication LoRA: 
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
-![Schéma PCB](/images_Mosh/image_mosh_final.jpg)
-![Schéma PCB](/images_Mosh/result_pot_dernierevaleur.png)
-![Schéma PCB](/images_Mosh/Resultat_potentiometre.png)
-![Schéma PCB](/images_Mosh/valeur_internetthings.png)
+
+<img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="Schéma PCB">
+
+![Schéma PCB](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
+![Schéma PCB](/Mosh/images_Mosh/Resultat_potentiometre.png)
+![Schéma PCB](/Mosh/images_Mosh/valeur_internetthings.png)
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
 ![Schéma électronique](/Kicad/Projet_Kicad/Eeschema_shield.png)
@@ -38,4 +40,4 @@ Le plan de masse permet également de réaliser le routage sur une seule couche,
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
 
-[Rapport_LTSPice](/images_Mosh/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf)
+<a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice</a>
