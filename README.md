@@ -19,6 +19,8 @@ Le projet est constitué des répertoires suivants:
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
 
 <img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="Schéma PCB">
+Ci-dessus l'image du montage permettant d'interconnecter le module LoRa, l'arduino UNO et le capteur de Gaz.
+Ci-dessous une série d'images montrant le résultat de notre montage avec la réception et l'envoi de la valeur du capteur.
 
 ![Schéma PCB](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
 ![Schéma PCB](/Mosh/images_Mosh/Resultat_potentiometre.png)
@@ -26,7 +28,14 @@ Dans cette partie, nous avons testé la collection de données et communication 
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
 ![Schéma électronique](/Kicad/Projet_Kicad/Eeschema_shield.png)
+
+Nous avons essayé de réaliser le capteur avec les 6 broches mais nous avons rencontré des problèmes, nous sommes donc restés sur un capteur tel qu'il y a dans le schéma ci-dessus.
+![Schéma électronique](/Kicad/Projet_Kicad/Eeaschema_capteur_rond.png)
+
+Conception du layout avec le traçage des routes et la création des footprints et leur positionnement sur la carte.
 ![Schéma PCB](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
+
+Vue 3D de la carte avec et sans plan de masse:
 ![Schéma Shield Avant 3D](/Kicad/Projet_Kicad/Shield_avant_3D.png)
 ![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
 Pour finir, nous avons réalisé un plan de masse:
@@ -41,3 +50,12 @@ Le plan de masse permet également de réaliser le routage sur une seule couche,
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
 
 <a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice</a>
+
+
+#Choix de Conception
+
+ - Nous avons modifié la forme du contour du shield en un rectangle plus grand que l'Arduino UNO pour faciliter le routage et l'inclusion de la puce LoRa.
+
+- Au niveau du PCB, nous avons du faire face à des avertissements de type "Pad près d'un pad" au moment de la validation de notre PCB. Nous avons remarqué que ces messages ciblés les capacité qui que nous avons choisi dans les librairie génériques qui se sont avérés plus petites que ceux que nous utiliserons en réalité. Les marges de pistes sont trop épaisses par rapport à l'espacement entre les 2 broches des capacités provoquant un chevauchent de celles-ci entre elles. Pour changer cela, il faudrait choisir d'autres empreintes pour ces composants, car compte tenu des contraintes de fabrication qui nous sont imposées, nous ne pouvons pas réduire l'épaisseur des pistes). 
+
+- Nous avons effectué tous les routage sur une seule couche de cuivre sur la carte pour rendre possible sa fabrication à l'INSA. Les pistes sont sur la partie "Bottom" qui est aussi le plan de masse. Les composants sont quand eux positionnés sur la partie "Top".
