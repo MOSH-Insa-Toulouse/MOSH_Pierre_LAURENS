@@ -1,43 +1,47 @@
 
-# Projet Smart Device
-# MICRO-CONTROLEURS ET OPEN-SOURCE HARDWARE:
-# Projet de Construction d'un capteur de gaz 
+# Smart Device Project
+# MICROCONTROLLERS AND OPEN-SOURCE HARDWARE:
+# Gas Sensor Construction Project
+
+    LAURENS Pierre - TOUZANI Ismail
 >LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail 
+
 <a href="./README.md">French version</a>
 
-Ce projet, faisant partie du Master 5ISS de l'INSA Toulouse, a été developpé dans le but de créer un capteur de gas intelligent capable de détecter plusieurs types de gas qui pourront être dangereux pour la santé humaine.
-Après avoir construit le capteur dans l'atelier AIME de l'INSA, il sera donc nécessaire de le régler pour en extraire les informations utiles: cela se fera grâce au logiciel LTSpice IV pour la partie éléctronique analogique. Ensuite, et afin de récupérer les données du capteur et les communiquer à travers le réseau LoRA, on utilisera une carte Arduino Uno et une puce RN2483. Enfin, nous utiliserons le logiciel KiCAD pour effectuer le schéma adéquat du câblage entre les différents composants.
+This project, part of the Master 5ISS of INSA Toulouse, was developed with the aim of creating an intelligent gas sensor capable of detecting several types of gas that could be dangerous to human health. After having built the sensor in the AIME workshop of INSA, it will be necessary to adjust it to extract the useful information: this will be done using the LTSpice IV software for the analogical electronic part. Then, in order to retrieve the sensor data and communicate them through the LoRA network, an Arduino Uno card and a RN2483 chip will be used. Finally, we will use the KiCAD software to make the appropriate wiring diagram between the different components.
+Content of the Project
 
 # Contenu du Projet
-Le projet est constitué des répertoires suivants:
--   **KiCAD**: Contient les fichiers nécessaires à la réalisation du PCB.
--   **Mosh (Arduino IDE)**: Contient les fichiers des tps effectués en utilisant l'IDE d'Arduino ainsi que les fichiers du projet.
--   **LTSpice**: Contient les fichiers nécessaires à la partie éléctronique analogique.
+The project consists of the following directories:
+-   **KiCAD**: Contains the files needed to build the PCB.
+-   **Mosh (Arduino IDE)**: Contains the files of the gps performed using the Arduino IDE as well as the project files.
+-   **LTSpice**: Contains the files needed for the analog electronic part.
 
   
-### Partie collection de données et communication LoRA: 
-Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
+### Data collection and LoRA communication part:
+In this section we have tested the LoRA data collection and communication with a test sensor:
 
-<img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="Schéma PCB">
+<img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="PCB schematic">
 
-![Schéma PCB](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
-![Schéma PCB](/Mosh/images_Mosh/Resultat_potentiometre.png)
-![Schéma PCB](/Mosh/images_Mosh/valeur_internetthings.png)
-### Partie construction du shield/PCB: 
-Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
-![Schéma électronique](/Kicad/Projet_Kicad/Eeschema_shield.png)
-![Schéma PCB](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad/Shield_avant_3D.png)
-![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
-Pour finir, nous avons réalisé un plan de masse:
-![Schéma PCB](/Kicad/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
+![PCB Schematic](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
+![PCB Schematic](/Mosh/images_Mosh/Resultat_potentiometre.png)
+![PCB Schematic](/Mosh/images_Mosh/valeur_internetthings.png)
+### Construction part of the shield/PCB:
+In this part, we have built our own shield/PCB thanks to KiCAD :
+
+![Electronic schematic](/Kicad/Projet_Kicad/Eeschema_shield.png)
+![PCB Schematic](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
+![3D Front Shield Schematic](/Kicad/Projet_Kicad/Shield_avant_3D.png)
+![3D Back Shield Schematic](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
+Finally, we have made a ground plan:
+![PCB Schematic](/Kicad/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
 ![Schéma PCB avec Plan de masse en 3D](/Kicad/Projet_Kicad_plan_masse/shiel_final.png)
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
-![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
+![3D Front Shield Schematic](/Kicad/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
+![3D Back Shield Schematic](/Kicad/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
 
-Nous avons réalisé un plan de masse pour réduire la consommation en cuivre et limiter le routage en une seule couche. En effet, nous avons  supprimé toutes les routes sur la couche avant de notre shield(rouge) présentent sur la photo ci-dessus.
-Le plan de masse permet également de réaliser le routage sur une seule couche, la couche arrière  de notre Shield. Pour finir, nous avons ainsi respecté les contraintes de routage définies par l'INSA.
-### Partie électronique analogique: 
-Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
+We carried out a ground plan to reduce copper consumption and limit single-layer routing. Indeed, we removed all the routes on the front layer of our shield(red) present on the picture above. The ground plan also allows us to do the routing on a single layer, the back layer of our Shield. Finally, we have respected the routing constraints defined by the INSA.
+
+### Analog electronic part:
+Concerning this part, we have studied, using LTSPice IV, the analog electronic part of the Smart Device module where we will measure the resistance, the low current with a microcontroller and perform a low-pass filtering to extract the useful information from our gas sensor.
 
 <a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice</a>
