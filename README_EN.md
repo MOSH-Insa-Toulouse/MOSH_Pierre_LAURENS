@@ -44,4 +44,4 @@ We carried out a ground plan to reduce copper consumption and limit single-layer
 ### Analog electronic part:
 Concerning this part, we have studied, using LTSPice IV, the analog electronic part of the Smart Device module where we will measure the resistance, the low current with a microcontroller and perform a low-pass filtering to extract the useful information from our gas sensor.
 
-<a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice</a>
+<a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice (french version)</a>
