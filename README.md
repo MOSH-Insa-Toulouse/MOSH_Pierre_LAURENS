@@ -16,9 +16,9 @@ Le projet est constitué des répertoires suivants:
 
 -   **KiCAD**: Contient les fichiers nécessaires à la réalisation du PCB.
 Ce fichier est composé de 3 dossiers.
-    - *Projet Kicad* : contenant la première version de notre projet.
-    - *Projet Kicad plan de masse* : contenant le même projet que le fichier ci-dessus mais avec la réalisation du plan de masse.
-    - *Projet Kicad Aime plan de masse* : contenant le PCB du capteur de Gaz réalisé dans les locaux du AIME.
+    - **Projet Kicad** : contenant la première version de notre projet.
+    - **Projet Kicad plan de masse** : contenant le même projet que le fichier ci-dessus mais avec la réalisation du plan de masse.
+    - **Projet Kicad Aime plan de masse** : contenant le PCB du capteur de Gaz réalisé dans les locaux du AIME.
 
 -   **LTSpice**: Contient les fichiers nécessaires à la partie éléctronique analogique.
 
@@ -27,7 +27,7 @@ Ce fichier est composé de 3 dossiers.
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:
 
 <img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="Schéma PCB">
-Ci-dessus l'image du montage permettant d'interconnecter le module LoRa, l'arduino UNO et le capteur de Gaz.
+Ci-dessus l'image du montage permettant d'interconnecter le module LoRa, l'Arduino UNO et le capteur de Gaz.
 Ci-dessous une série d'images montrant le résultat de notre montage avec la réception et l'envoi de la valeur du capteur.
 
 ![Schéma PCB](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
@@ -36,11 +36,11 @@ Ci-dessous une série d'images montrant le résultat de notre montage avec la r�
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
 
-Un Zoom sur la conception du capteur de Gaz AIME sur Eeaschema:
+Un Zoom sur la conception du capteur de Gaz AIME sur Eeschema:
 
 ![Schéma électronique du capteur](/Kicad/Projet_Kicad_Aime_plan_masse/image_capteur.png)
 
-Puis ci-dessous, l'ensemble du Capteur Intelligent designé sur Eeaschema:
+Puis ci-dessous, l'ensemble du Capteur Intelligent designé sur Eeschema:
 
 ![Schéma électronique du capteur intelligent](/Kicad/Projet_Kicad_Aime_plan_masse/capture_Aime_capteur_Eeaschema.png)
 
@@ -53,7 +53,7 @@ Vue 3D de la carte avec et sans plan de masse:
 ![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor.png)
 ![Schéma Shield 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Sensor_Aime_shield_3D.png)
 
-Si Nous réduisons le nombre de route sur le devant de la carte pour prévilègier l'arrière:
+Si nous réduisons le nombre de route sur le devant de la carte pour privilégier l'arrière:
 
 ![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_2.png)
 

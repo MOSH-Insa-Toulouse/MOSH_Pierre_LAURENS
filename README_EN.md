@@ -14,6 +14,9 @@ Content of the Project
 # Contenu du Projet
 The project consists of the following directories:
 -   **KiCAD**: Contains the files needed to build the PCB.
+    - **Projet Kicad**: containing the first version of our project.
+    - **Projet Kicad plan de masse** : containing the same project as the above file but with the realization of the plan de masse.
+    - **Kicad Aime plan de masse project** : containing the PCB of the gas sensor realized in the premises of the AIME.
 -   **Mosh (Arduino IDE)**: Contains the files of the gps performed using the Arduino IDE as well as the project files.
 -   **LTSpice**: Contains the files needed for the analog electronic part.
 
@@ -23,21 +26,39 @@ In this section we have tested the LoRA data collection and communication with a
 
 <img width="360" height="280" src="Mosh/images_Mosh/image_mosh_final.jpg" title="PCB schematic">
 
+Above is an image of the assembly for interconnecting the LoRa module, the arduino UNO and the gas sensor.
+Below is a series of images showing the result of our assembly with the reception and sending of the sensor value.
+
 ![PCB Schematic](/Mosh/images_Mosh/result_pot_dernierevaleur.png)
 ![PCB Schematic](/Mosh/images_Mosh/Resultat_potentiometre.png)
 ![PCB Schematic](/Mosh/images_Mosh/valeur_internetthings.png)
 ### Construction part of the shield/PCB:
 In this part, we have built our own shield/PCB thanks to KiCAD :
 
-![Electronic schematic](/Kicad/Projet_Kicad/Eeschema_shield.png)
-![PCB Schematic](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
-![3D Front Shield Schematic](/Kicad/Projet_Kicad/Shield_avant_3D.png)
-![3D Back Shield Schematic](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
-Finally, we have made a ground plan:
-![PCB Schematic](/Kicad/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
-![Schéma PCB avec Plan de masse en 3D](/Kicad/Projet_Kicad_plan_masse/shiel_final.png)
-![3D Front Shield Schematic](/Kicad/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
-![3D Back Shield Schematic](/Kicad/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
+A Zoom on the design of the AIME gas sensor on Eeschema:
+
+![Sensor circuit diagram](/Kicad/Projet_Kicad_Aime_plan_masse/image_capteur.png)
+
+Then below, the entire Intelligent Sensor designed on Eeschema:
+
+![Electronic diagram of the intelligent sensor](/Kicad/Projet_Kicad_Aime_plan_masse/capture_Aime_capteur_Eeaschema.png)
+
+Layout design with the tracing of roads and the creation of footprints and their positioning on the map.
+
+
+![PCB Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur.png)
+
+3D view of the map with and without ground plan:
+![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor.png)
+![3D Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/Sensor_Aime_shield_3D.png)
+
+If We reduce the number of roads on the front of the map to favour the back:
+
+![PCB Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_2.png)
+
+![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor_2.png)
+
+![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Shield_arriere_3D.png)
 
 We carried out a ground plan to reduce copper consumption and limit single-layer routing. Indeed, we removed all the routes on the front layer of our shield(red) present on the picture above. The ground plan also allows us to do the routing on a single layer, the back layer of our Shield. Finally, we have respected the routing constraints defined by the INSA.
 
