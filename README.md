@@ -12,8 +12,14 @@ Après avoir construit le capteur dans l'atelier AIME de l'INSA, il sera donc n�
 
 # Contenu du Projet
 Le projet est constitué des répertoires suivants:
--   **KiCAD**: Contient les fichiers nécessaires à la réalisation du PCB.
 -   **Mosh (Arduino IDE)**: Contient les fichiers des tps effectués en utilisant l'IDE d'Arduino ainsi que les fichiers du projet.
+
+-   **KiCAD**: Contient les fichiers nécessaires à la réalisation du PCB.
+Ce fichier est composé de 3 dossiers.
+    - *Projet Kicad* : contenant la première version de notre projet.
+    - *Projet Kicad plan de masse* : contenant le même projet que le fichier ci-dessus mais avec la réalisation du plan de masse.
+    - *Projet Kicad Aime plan de masse* : contenant le PCB du capteur de Gaz réalisé dans les locaux du AIME.
+
 -   **LTSpice**: Contient les fichiers nécessaires à la partie éléctronique analogique.
 
   
@@ -29,32 +35,44 @@ Ci-dessous une série d'images montrant le résultat de notre montage avec la r�
 ![Schéma PCB](/Mosh/images_Mosh/valeur_internetthings.png)
 ### Partie construction du shield/PCB: 
 Dans cette partie, nous avons construit notre propre shield/PCB grâce à KiCAD :
-![Schéma électronique](/Kicad/Projet_Kicad/Eeschema_shield.png)
 
-Nous avons essayé de réaliser le capteur avec les 6 broches mais nous avons rencontré des problèmes, nous sommes donc restés sur un capteur tel qu'il y a dans le schéma ci-dessus.
-![Schéma électronique](/Kicad/Projet_Kicad/Eeaschema_capteur_rond.png)
+Un Zoom sur la conception du capteur de Gaz AIME sur Eeaschema:
+
+![Schéma électronique du capteur](/Kicad/Projet_Kicad_Aime_plan_masse/image_capteur.png)
+
+Puis ci-dessous, l'ensemble du Capteur Intelligent designé sur Eeaschema:
+
+![Schéma électronique du capteur intelligent](/Kicad/Projet_Kicad_Aime_plan_masse/capture_Aime_capteur_Eeaschema.png)
 
 Conception du layout avec le traçage des routes et la création des footprints et leur positionnement sur la carte.
-![Schéma PCB](/Kicad/Projet_Kicad/PCB_shield_capteur.png)
+
+
+![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur.png)
 
 Vue 3D de la carte avec et sans plan de masse:
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad/Shield_avant_3D.png)
-![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad/Shield_arriere_3D.png)
-Pour finir, nous avons réalisé un plan de masse:
-![Schéma PCB](/Kicad/Projet_Kicad_plan_masse/Kicad_plan_masse.png)
-![Schéma PCB avec Plan de masse en 3D](/Kicad/Projet_Kicad_plan_masse/shiel_final.png)
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_plan_masse/Shiel_avant_3D_plan_masse.png)
-![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad_plan_masse/Kicad_arriere_3D_plan_masse.png)
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor.png)
+![Schéma Shield 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Sensor_Aime_shield_3D.png)
+
+Si Nous réduisons le nombre de route sur le devant de la carte pour prévilègier l'arrière:
+
+![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_2.png)
+
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor_2.png)
+
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Shield_arriere_3D.png)
+
+
 
 Nous avons réalisé un plan de masse pour réduire la consommation en cuivre et limiter le routage en une seule couche. En effet, nous avons  supprimé toutes les routes sur la couche avant de notre shield(rouge) présentent sur la photo ci-dessus.
 Le plan de masse permet également de réaliser le routage sur une seule couche, la couche arrière  de notre Shield. Pour finir, nous avons ainsi respecté les contraintes de routage définies par l'INSA.
+
 ### Partie électronique analogique: 
 Concernant cette partie, nous avons étudier, en utilisant LTSPice IV, la partie électronique analogique du module Smart Device où nous serons amené à mesurer la résistance, le faible courant avec un microcontrôleur et effectuer un filtrage passe bas pour extraire les informations utiles de notre capteur de gaz. 
 
 <a href="/LTspice/UF_Smart_Device_ Partie_analogique_avec_LTSpice_IV.pdf">Rapport_LTSPice</a>
 
 
-#Choix de Conception
+### Choix de Conception
 
  - Nous avons modifié la forme du contour du shield en un rectangle plus grand que l'Arduino UNO pour faciliter le routage et l'inclusion de la puce LoRa.
 

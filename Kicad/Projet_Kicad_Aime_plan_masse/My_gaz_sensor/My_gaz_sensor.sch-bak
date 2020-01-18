@@ -376,7 +376,7 @@ L Device:C C4
 U 1 1 5E1C16EB
 P 6000 3150
 F 0 "C4" H 6115 3196 50  0000 L CNN
-F 1 "100n" H 6115 3105 50  0000 L CNN
+F 1 "1µ" H 6115 3105 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 6038 3000 50  0001 C CNN
 F 3 "~" H 6000 3150 50  0001 C CNN
 	1    6000 3150
@@ -714,7 +714,7 @@ U 1 1 5E276475
 P 2250 4650
 F 0 "J2" V 2214 4462 50  0000 R CNN
 F 1 "Conn_01x03" V 2123 4462 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 2250 4650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 2250 4650 50  0001 C CNN
 F 3 "~" H 2250 4650 50  0001 C CNN
 	1    2250 4650
 	0    -1   -1   0   
@@ -725,7 +725,7 @@ U 1 1 5E27739D
 P 2250 4450
 F 0 "J1" V 2122 4630 50  0000 L CNN
 F 1 "Conn_01x03" V 2213 4630 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 2250 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 2250 4450 50  0001 C CNN
 F 3 "~" H 2250 4450 50  0001 C CNN
 	1    2250 4450
 	0    1    1    0   

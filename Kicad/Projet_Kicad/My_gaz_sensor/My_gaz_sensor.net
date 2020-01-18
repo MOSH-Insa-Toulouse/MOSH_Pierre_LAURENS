@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/pierre/Documents/5ISS/KiCad/Projet_Kicad/My_gaz_sensor/My_gaz_sensor.sch)
-    (date "sam. 11 janv. 2020 17:06:31 CET")
+    (source /home/pierre/Documents/5ISS/gitRepos/MOSH_Pierre_LAURENS_Ismael_Touzani/Kicad/Projet_Kicad/My_gaz_sensor/My_gaz_sensor.sch)
+    (date "sam. 18 janv. 2020 14:51:32 CET")
     (tool "Eeschema 5.1.5-52549c5~84~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -127,7 +127,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5E1C0E01))
     (comp (ref C4)
-      (value 100n)
+      (value 1μ)
       (footprint Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm)
       (datasheet ~)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
@@ -149,7 +149,7 @@
     (comp (ref U1)
       (value LTC1050)
       (footprint MyComponent:PDIP-8_N)
-      (libsource (lib MyLib) (part LTC1050) (description ""))
+      (libsource (lib My_gaz_sensor-rescue) (part LTC1050-MyLib) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E1F5F5E)))
   (libparts
@@ -236,19 +236,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib MyLib) (part LTC1050)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) LTC1050))
-      (pins
-        (pin (num 1) (name NC) (type NotConnected))
-        (pin (num 2) (name IN-) (type BiDi))
-        (pin (num 3) (name IN+) (type BiDi))
-        (pin (num 4) (name V+) (type power_in))
-        (pin (num 5) (name ExtCLK) (type power_in))
-        (pin (num 6) (name OUT) (type output))
-        (pin (num 7) (name V-) (type power_in))
-        (pin (num 8) (name NC) (type NotConnected))))
     (libpart (lib MyLib) (part RN2483A)
       (fields
         (field (name Reference) U1)
@@ -261,14 +248,29 @@
         (pin (num 5) (name RST) (type input))
         (pin (num 6) (name 3V3) (type power_in))
         (pin (num 7) (name Vin) (type power_in))
-        (pin (num 8) (name GND) (type power_in)))))
+        (pin (num 8) (name GND) (type power_in))))
+    (libpart (lib My_gaz_sensor-rescue) (part LTC1050-MyLib)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) LTC1050-MyLib))
+      (pins
+        (pin (num 1) (name NC) (type NotConnected))
+        (pin (num 2) (name IN-) (type input))
+        (pin (num 3) (name IN+) (type input))
+        (pin (num 4) (name V+) (type power_in))
+        (pin (num 5) (name ExtCLK) (type power_in))
+        (pin (num 6) (name OUT) (type output))
+        (pin (num 7) (name V-) (type power_in))
+        (pin (num 8) (name NC) (type NotConnected)))))
   (libraries
     (library (logical Connector_Generic)
       (uri /usr/share/kicad/library/Connector_Generic.lib))
     (library (logical Device)
       (uri /usr/share/kicad/library/Device.lib))
     (library (logical MyLib)
-      (uri /home/pierre/Documents/5ISS/KiCad/Projet_Kicad/My_gaz_sensor/MyLib.lib)))
+      (uri /home/pierre/Documents/5ISS/gitRepos/MOSH_Pierre_LAURENS_Ismael_Touzani/Kicad/Projet_Kicad/My_gaz_sensor/MyLib.lib))
+    (library (logical My_gaz_sensor-rescue)
+      (uri /home/pierre/Documents/5ISS/gitRepos/MOSH_Pierre_LAURENS_Ismael_Touzani/Kicad/Projet_Kicad/My_gaz_sensor/My_gaz_sensor-rescue.lib)))
   (nets
     (net (code 1) (name /IOREF)
       (node (ref P1) (pin 2)))

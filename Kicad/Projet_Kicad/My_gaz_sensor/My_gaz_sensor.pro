@@ -1,14 +1,17 @@
-update=sam. 11 janv. 2020 17:24:51 CET
+update=sam. 18 janv. 2020 14:52:21 CET
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
+[eeschema/libraries]
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -64,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
