@@ -46,19 +46,11 @@ Then below, the entire Intelligent Sensor designed on Eeschema:
 Layout design with the tracing of roads and the creation of footprints and their positioning on the map.
 
 
-![PCB Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur.png)
+![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_datasheet.png)
 
-3D view of the map with and without ground plan:
-![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor.png)
-![3D Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/Sensor_Aime_shield_3D.png)
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Shield_3D_final_Aime_Capteur_datasheet.png)
 
-If We reduce the number of roads on the front of the map to favour the back:
-
-![PCB Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_2.png)
-
-![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor_2.png)
-
-![3D Front Shield Diagram](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Shield_arriere_3D.png)
+![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Shield_3D_arriere_final_Aime_Capteur_datasheet.png)
 
 We carried out a ground plan to reduce copper consumption and limit single-layer routing. Indeed, we removed all the routes on the front layer of our shield(red) present on the picture above. The ground plan also allows us to do the routing on a single layer, the back layer of our Shield. Finally, we have respected the routing constraints defined by the INSA.
 

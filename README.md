@@ -46,20 +46,11 @@ Puis ci-dessous, l'ensemble du Capteur Intelligent designé sur Eeschema:
 
 Conception du layout avec le traçage des routes et la création des footprints et leur positionnement sur la carte.
 
+![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_datasheet.png)
 
-![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur.png)
+![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Shield_3D_final_Aime_Capteur_datasheet.png)
 
-Vue 3D de la carte avec et sans plan de masse:
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor.png)
-![Schéma Shield 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Sensor_Aime_shield_3D.png)
-
-Si nous réduisons le nombre de route sur le devant de la carte pour privilégier l'arrière:
-
-![Schéma PCB](/Kicad/Projet_Kicad_Aime_plan_masse/PCB_final_Aime_Capteur_2.png)
-
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Sensor_2.png)
-
-![Schéma Shield Avant 3D](/Kicad/Projet_Kicad_Aime_plan_masse/PcB_Aime_Shield_arriere_3D.png)
+![Schéma Shield Arrière 3D](/Kicad/Projet_Kicad_Aime_plan_masse/Shield_3D_arriere_final_Aime_Capteur_datasheet.png)
 
 
 
