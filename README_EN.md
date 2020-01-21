@@ -3,8 +3,8 @@
 # MICROCONTROLLERS AND OPEN-SOURCE HARDWARE:
 # Gas Sensor Construction Project
 
-    LAURENS Pierre - TOUZANI Ismail
->LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail 
+    LAURENS Pierre - TOUZANI Ismail - Krishna Sujan
+>LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail - Krishna Sujan
 
 <a href="./README.md">French version</a>
 
