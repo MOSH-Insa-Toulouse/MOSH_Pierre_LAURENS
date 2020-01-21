@@ -2,7 +2,7 @@
 # Projet Smart Device
 # MICRO-CONTROLEURS ET OPEN-SOURCE HARDWARE:
 # Projet de Construction d'un capteur de gaz 
->LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail 
+>LAURENS [Pierre](mailto:plaurens@etud.insa-toulouse.fr) - TOUZANI Ismail - Krishna Sujan
 
 
 <a href="./README_EN.md">Version Anglaise</a>
