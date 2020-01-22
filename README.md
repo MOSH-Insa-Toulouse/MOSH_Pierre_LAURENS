@@ -22,6 +22,8 @@ Ce fichier est composé de 3 dossiers.
 
 -   **LTSpice**: Contient les fichiers nécessaires à la partie éléctronique analogique.
 
+-  **Manufacturing_Kicad**: Dossier contenant le fichier de création de la carte.
+
   
 ### Partie collection de données et communication LoRA: 
 Dans cette partie, nous avons testé la collection de données et communication LoRA avec un capteur de test:

@@ -17,8 +17,9 @@ The project consists of the following directories:
     - **Projet Kicad**: containing the first version of our project.
     - **Projet Kicad plan de masse** : containing the same project as the above file but with the realization of the plan de masse.
     - **Kicad Aime plan de masse project** : containing the PCB of the gas sensor realized in the premises of the AIME.
--   **Mosh (Arduino IDE)**: Contains the files of the gps performed using the Arduino IDE as well as the project files.
--   **LTSpice**: Contains the files needed for the analog electronic part.
+    -   **Mosh (Arduino IDE)**: Contains the files of the gps performed using the Arduino IDE as well as the project files.
+    -   **LTSpice**: Contains the files needed for the analog electronic part.
+     -  **Manufacturing_Kicad**: File for manufacturing the shield.
 
   
 ### Data collection and LoRA communication part:
